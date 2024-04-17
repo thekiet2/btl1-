@@ -1,0 +1,191 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\thekiet\documents\demosdl\main.cpp
+	<iostream>
+
+1709920974 source:c:\users\thekiet\documents\demosdl\rsn.cpp
+	<iostream>
+	<vector>
+	<windows.h>
+	<conio.h>
+	<cstring>
+	<time.h>
+	<random>
+
+1713365718 source:c:\users\thekiet\documents\demosdl\main (1).cpp
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	<iostream>
+	<vector>
+	<ctime>
+	<cmath>
+	<stdlib.h>
+	"renderwindow.h"
+	"entity.h"
+	"player.h"
+	"ground.h"
+	"mons.h"
+	"bkg.c"
+
+1712030458 c:\users\thekiet\documents\demosdl\defs.h
+
+1712175154 c:\users\thekiet\documents\demosdl\graphics.h
+	<string>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+
+1711730291 source:c:\users\thekiet\documents\demosdl\graphics.cpp
+
+1712040075 c:\users\thekiet\documents\demosdl\game.h
+
+1711993393 source:c:\users\thekiet\documents\demosdl\basic function.c
+	<SDL.h>
+	<SDL_image.h>
+	<windows.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1712941184 source:c:\users\thekiet\documents\demosdl\entity.cpp
+	<vector>
+	<SDL.h>
+	<SDL_image.h>
+	"entity.h"
+
+1713350443 source:c:\users\thekiet\documents\demosdl\ground.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"ground.h"
+	"groundtile.h"
+
+1712823646 source:c:\users\thekiet\documents\demosdl\groundtile.cpp
+	"groundtile.h"
+
+1712939081 source:c:\users\thekiet\documents\demosdl\player.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<cmath>
+	<vector>
+	<string>
+	"player.h"
+	"entity.h"
+	"ground.h"
+
+1712999442 c:\users\thekiet\documents\demosdl\entity.h
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+
+1713365505 source:c:\users\thekiet\documents\demosdl\renderwindow.cpp
+	"renderwindow.h"
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1713365266 c:\users\thekiet\documents\demosdl\renderwindow.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	"entity.h"
+	"mons.h"
+
+1712824089 c:\users\thekiet\documents\demosdl\groundtile.h
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	"entity.h"
+
+1712216048 c:\users\thekiet\documents\demosdl\ground.h
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	"groundtile.h"
+
+1713128503 c:\users\thekiet\documents\demosdl\player.h
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	<string>
+	"entity.h"
+	"ground.h"
+
+1712926941 c:\users\thekiet\documents\demosdl\object.h
+	<SDL.h>
+	<SDL_image.h>
+	<string>
+	"renderwindow.h"
+
+1712918933 source:c:\users\thekiet\documents\demosdl\object.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<cmath>
+	<vector>
+	<string>
+	"Object.h"
+	"entity.h"
+	"ground.h"
+	"player.cpp"
+
+1712919132 c:\users\thekiet\documents\demosdl\player.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<cmath>
+	<vector>
+	<string>
+	"player.h"
+	"entity.h"
+	"ground.h"
+	"Object.h"
+
+1712939081 source:c:\users\thekiet\documents\demosdl\ob.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<cmath>
+	<vector>
+	<string>
+	"player.h"
+	"entity.h"
+	"ground.h"
+	"ob.h"
+
+1712941382 c:\users\thekiet\documents\demosdl\ob.h
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	<string>
+	"entity.h"
+
+1712941404 c:\users\thekiet\documents\demosdl\ob.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<cmath>
+	<vector>
+	<string>
+	"ob.h"
+
+1712999325 c:\users\thekiet\documents\demosdl\mm.c
+	<SDL.h>
+	<SDL_image.h>
+	"entity.h"
+
+1713128720 source:c:\users\thekiet\documents\demosdl\mons.cpp
+	"mons.h"
+
+1713128642 c:\users\thekiet\documents\demosdl\mons.h
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	"ground.h"
+
+1713364051 source:c:\users\thekiet\documents\demosdl\bkg.c
+
+1713363065 source:c:\users\thekiet\documents\demosdl\untitled1.c
+
+1713364051 c:\users\thekiet\documents\demosdl\bkg.c
+
