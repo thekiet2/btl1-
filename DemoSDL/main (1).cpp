@@ -13,6 +13,7 @@
 #include "ground.h"
 #include "mons.h"
 #include "bkg.c"
+#include "star.h"
 using namespace std;
 
 const int SCREEN_WIDTH = 800;
@@ -20,6 +21,24 @@ const int SCREEN_HEIGHT = 480;
 const int ALIVE = 0;
 const int CURSOR_DEATH = 1;
 const int HOLE_DEATH = 2;
+
+bool check(Player& entity1,  Star& entity2) {
+    int left1 = entity1.getX();
+    int right1 = left1 + entity1.getWidth();
+    int top1 = entity1.getY();
+    int bottom1 = top1 + entity1.getHeight();
+
+    int left2 = entity2.getX();
+    int right2 = left2 + entity2.getWidth();
+    int top2 = entity2.getY();
+    int bottom2 = top2 + entity2.getHeight();
+
+    if (right1 >= left2 && left1 <= right2 && bottom1 >= top2 && top1 <= bottom2) {
+        return true;
+    }
+
+    return false;
+}
 
 bool check(Player& entity1,  Mons& entity2) {
     int left1 = entity1.getX();
@@ -50,6 +69,7 @@ SDL_Texture* highscoreBox;
 SDL_Texture* deathOverlay;
 SDL_Texture* logo;
 SDL_Texture* mstex;
+SDL_Texture* sao;
 TTF_Font* font32;
 TTF_Font* font32_outline;
 TTF_Font* font24;
@@ -86,6 +106,7 @@ bool init() {
     groundTex[3] = window.loadTexture("hole.png");
     monster = window.loadTexture("object.png");
     bk = window.loadTexture("bkk.jpg");
+    sao = window.loadTexture("star.webp");
 
     arrow = window.loadTexture("arrow.png");
     highscoreBox = window.loadTexture("highscore_box.png");
