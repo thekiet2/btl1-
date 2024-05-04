@@ -106,7 +106,7 @@ bool init() {
     groundTex[3] = window.loadTexture("hole.png");
     monster = window.loadTexture("object.png");
     bk = window.loadTexture("bkk.jpg");
-    sao = window.loadTexture("star.webp");
+    sao = window.loadTexture("ball.png");
 
     arrow = window.loadTexture("arrow.png");
     highscoreBox = window.loadTexture("highscore_box.png");
@@ -133,10 +133,12 @@ bool load = init();
 Player player(0, 0, playerTex);
 Ground ground(groundTex[0], groundTex[1], groundTex[2], groundTex[3]);
 Mons mon(monster, 10, 410);
+Star saoplus(sao, 30, 450);
 void reset() {
     player.reset();
     ground.reset();
     mon.reset();
+    saoplus.reset();
 }
 
 void gameLoop() {
