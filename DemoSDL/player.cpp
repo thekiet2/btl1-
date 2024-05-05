@@ -58,10 +58,32 @@ void Player::animEyes()
 	setAnisetX(0, clamp(mouseX - getX() - getWidth()/2, -2.5, 2.5));
 	setAnisetY(0, clamp(mouseY - getY() - getHeight()/2 + 15, -2.5, 2.5));
 }
+bool Player::check(Player& entity1,  Star& entity2) {
+    int left1 = entity1.getX();
+    int right1 = left1 + entity1.getWidth();
+    int top1 = entity1.getY();
+    int bottom1 = top1 + entity1.getHeight();
+
+    int left2 = entity2.getX();
+    int right2 = left2 + entity2.getWidth();
+    int top2 = entity2.getY();
+    int bottom2 = top2 + entity2.getHeight();
+
+    if (right1 >= left2 && left1 <= right2 && bottom1 >= top2 && top1 <= bottom2) {
+        return true;
+    }
+
+    return false;
+}
+void Player::updatebonus(Player& entity1, Star& entity2){
+    if(check(entity1, entity2) == 1){
+        bonus += 100;
+    }
+}
 void Player::update(Ground& ground)
 {
 	timer++;
-	score = timer/50;
+	score = timer/50 + bonus;
 	if (score > highscore)
 	{
 		highscore = score;
