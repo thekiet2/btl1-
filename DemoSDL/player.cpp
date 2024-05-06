@@ -78,9 +78,10 @@ bool Player::check(Player& entity1,  Star& entity2) {
 void Player::updatebonus(Player& entity1, Star& entity2){
     if(check(entity1, entity2) == 1){
         bonus += 100;
+        entity2.resetagain();
     }
 }
-void Player::update(Ground& ground)
+void Player::update(Ground& ground, Star& star)
 {
 	timer++;
 	score = timer/50 + bonus;
@@ -151,6 +152,7 @@ void Player::update(Ground& ground)
 				dead = HOLE_DEATH;
 			}
 	}
+	updatebonus(*this, star);
 
 }
 const char* Player::getScore()

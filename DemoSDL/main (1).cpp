@@ -22,24 +22,6 @@ const int ALIVE = 0;
 const int CURSOR_DEATH = 1;
 const int HOLE_DEATH = 2;
 
-bool check(Player& entity1,  Star& entity2) {
-    int left1 = entity1.getX();
-    int right1 = left1 + entity1.getWidth();
-    int top1 = entity1.getY();
-    int bottom1 = top1 + entity1.getHeight();
-
-    int left2 = entity2.getX();
-    int right2 = left2 + entity2.getWidth();
-    int top2 = entity2.getY();
-    int bottom2 = top2 + entity2.getHeight();
-
-    if (right1 >= left2 && left1 <= right2 && bottom1 >= top2 && top1 <= bottom2) {
-        return true;
-    }
-
-    return false;
-}
-
 bool check(Player& entity1,  Mons& entity2) {
     int left1 = entity1.getX();
     int right1 = left1 + entity1.getWidth();
@@ -133,7 +115,7 @@ bool load = init();
 Player player(0, 0, playerTex);
 Ground ground(groundTex[0], groundTex[1], groundTex[2], groundTex[3]);
 Mons mon(monster, 10, 410);
-Star saoplus(sao, 30, 450);
+Star saoplus(sao,50 , 350);
 void reset() {
     player.reset();
     ground.reset();
@@ -190,7 +172,7 @@ void gameLoop() {
         }
 
         if (player.isDead() == ALIVE) {
-            player.update(ground);
+            player.update(ground,saoplus);
             mon.update(ground);
         } else if (!playedDeathSFX) {
             if (player.isDead() == CURSOR_DEATH) {
@@ -204,6 +186,7 @@ void gameLoop() {
         window.render(bk);
         window.render(player);
         window.render(mon);
+        window.render(saoplus);
 
         for (int i = 0; i < ground.getLength(); i++) {
             window.render(ground.getTile(i));

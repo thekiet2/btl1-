@@ -13,9 +13,10 @@ class Player : public Entity {
 public:
 	Player(float p_x, float p_y, vector<SDL_Texture*> p_tex);
 	bool check(Player& entity1,  Star& entity2);
+	void updatebonus(Player& entity1, Star& entity2);
 	float distance();
 	bool jump();
-	void update(Ground& ground);
+	void update(Ground& ground, Star& star);
 	const char* getScore();
 	const char* getHighscore();
 	int getScoreInt();
