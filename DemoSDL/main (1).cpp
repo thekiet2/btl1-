@@ -87,7 +87,7 @@ bool init() {
     groundTex[2] = window.loadTexture("right.png");
     groundTex[3] = window.loadTexture("hole.png");
     monster = window.loadTexture("object.png");
-    bk = window.loadTexture("bkkjpg");
+    bk = window.loadTexture("bkk.jpg");
     sao = window.loadTexture("ball.png");
 
     arrow = window.loadTexture("arrow.png");
