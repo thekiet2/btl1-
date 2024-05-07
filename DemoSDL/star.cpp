@@ -39,9 +39,15 @@ void Star::update(Ground& ground) {
     }
 }
 void Star::reset() {
-    SetX(0);
+    SetX(300);
 }
 void Star::resetagain(){
-    SetX(getX() + 800 + rand()%800);
+    SetX(getX() + rand()%800-300);
+    if(getX() >700){
+        SetX(getX() - 700);
+    }
+    if(getX() < 300){
+        SetX(getX() + 300);
+    }
 }
 
